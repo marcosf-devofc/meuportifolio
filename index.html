@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Ferreira Gomes - Portfólio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfólio de Marcos Ferreira Gomes - Desenvolvedor de 19 anos de Goiânia. Especialista em React, Node.js e desenvolvimento web moderno.">
+    <meta name="keywords" content="desenvolvedor, portfólio, React, Node.js, JavaScript, Goiânia, desenvolvimento web">
+    <meta name="author" content="Marcos Ferreira Gomes">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcosferreira.dev/">
+    <meta property="og:title" content="Marcos Ferreira Gomes - Portfólio">
+    <meta property="og:description" content="Desenvolvedor apaixonado por tecnologia e inovação. Conheça meus projetos e habilidades.">
+    <meta property="og:image" content="https://marcosferreira.dev/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marcosferreira.dev/">
+    <meta property="twitter:title" content="Marcos Ferreira Gomes - Portfólio">
+    <meta property="twitter:description" content="Desenvolvedor apaixonado por tecnologia e inovação. Conheça meus projetos e habilidades.">
+    <meta property="twitter:image" content="https://marcosferreira.dev/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">MFG</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MFG</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button id="toggle-animations" class="nav-toggle-btn" title="Alternar animações">
+                    <i class="fas fa-magic"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Marcos Ferreira Gomes</span>
+                    </h1>
+                    <p class="hero-subtitle">Desenvolvedor & Criador Digital</p>
+                    <p class="hero-description">
+                        Olá! Sou Marcos, um jovem desenvolvedor apaixonado por tecnologia e inovação. 
+                        Com 19 anos, estou sempre em busca de novos desafios e aprendizado.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="Screenshot_20241226-013333_Instagram.jpg" alt="Marcos Ferreira Gomes" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-placeholder" style="display: none;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Marcos Ferreira Gomes</h3>
+                            <p>19 anos • Goiânia, Vila Pedroso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Conheça um pouco da minha história</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Quem sou eu?</h3>
+                    <p>
+                        Nascido e criado em Goiânia, especificamente na Vila Pedroso, sempre fui fascinado 
+                        pelo mundo da tecnologia. Aos 19 anos, já tenho uma paixão por desenvolvimento 
+                        e estou constantemente aprendendo novas tecnologias.
+                    </p>
+                    <p>
+                        Sou uma pessoa curiosa, determinada e sempre em busca de novos desafios. 
+                        Acredito que a tecnologia tem o poder de transformar vidas e estou aqui para 
+                        fazer parte dessa transformação.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">19</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Goiânia</span>
+                            <span class="stat-label">Cidade</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Vila Pedroso</span>
+                            <span class="stat-label">Bairro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-card">
+                        <div class="card-content">
+                            <i class="fas fa-code"></i>
+                            <h4>Desenvolvimento</h4>
+                            <p>Passionado por criar soluções inovadoras</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Projetos</h2>
+                <p class="section-subtitle">Alguns dos meus trabalhos</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="ecommerce">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-link project-view-btn" data-project="ecommerce">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/marcosferreira/ecommerce" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Moderno</h3>
+                        <p>Plataforma completa de e-commerce com carrinho, pagamentos e admin</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <button class="btn btn-primary project-modal-btn" data-project="ecommerce">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="taskapp">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-link project-view-btn" data-project="taskapp">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/marcosferreira/taskapp" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>App de Tarefas</h3>
+                        <p>Aplicativo mobile completo para gerenciamento de tarefas com sincronização</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                        <button class="btn btn-primary project-modal-btn" data-project="taskapp">Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-project="dashboard">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <button class="project-link project-view-btn" data-project="dashboard">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://github.com/marcosferreira/dashboard" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Dashboard interativo com gráficos avançados e análise de dados em tempo real</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <button class="btn btn-primary project-modal-btn" data-project="dashboard">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Contato</h2>
+                <p class="section-subtitle">Vamos trabalhar juntos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>marcossfg74@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>(62) 99202-9890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localização</h4>
+                            <p>Vila Pedroso, Goiânia - GO</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Marcos Ferreira Gomes. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="project-modal" id="ecommerce-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>E-commerce Moderno</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="project-demo">
+                    <div class="demo-container">
+                        <div class="demo-header">
+                            <h4>E-commerce Demo</h4>
+                            <div class="demo-controls">
+                                <button class="demo-btn active" data-tab="products">Produtos</button>
+                                <button class="demo-btn" data-tab="cart">Carrinho</button>
+                                <button class="demo-btn" data-tab="checkout">Checkout</button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-tab active" id="products-tab">
+                                <div class="product-grid">
+                                    <div class="demo-product">
+                                        <div class="product-img">📱</div>
+                                        <h5>iPhone 15</h5>
+                                        <p>R$ 4.999</p>
+                                        <button class="add-to-cart-btn" data-product="iphone">Adicionar</button>
+                                    </div>
+                                    <div class="demo-product">
+                                        <div class="product-img">💻</div>
+                                        <h5>MacBook Pro</h5>
+                                        <p>R$ 12.999</p>
+                                        <button class="add-to-cart-btn" data-product="macbook">Adicionar</button>
+                                    </div>
+                                    <div class="demo-product">
+                                        <div class="product-img">⌚</div>
+                                        <h5>Apple Watch</h5>
+                                        <p>R$ 2.999</p>
+                                        <button class="add-to-cart-btn" data-product="watch">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="cart-tab">
+                                <div class="cart-items">
+                                    <p class="empty-cart">Carrinho vazio</p>
+                                </div>
+                                <div class="cart-total">
+                                    <strong>Total: R$ 0,00</strong>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="checkout-tab">
+                                <div class="checkout-form">
+                                    <h5>Informações de Pagamento</h5>
+                                    <input type="text" placeholder="Nome no cartão" class="demo-input">
+                                    <input type="text" placeholder="Número do cartão" class="demo-input">
+                                    <div class="card-details">
+                                        <input type="text" placeholder="MM/AA" class="demo-input">
+                                        <input type="text" placeholder="CVV" class="demo-input">
+                                    </div>
+                                    <button class="btn btn-primary">Finalizar Compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Descrição</h3>
+                    <p>Plataforma completa de e-commerce desenvolvida com as mais modernas tecnologias. Inclui sistema de carrinho, pagamentos seguros, painel administrativo e interface responsiva.</p>
+                    
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li>Catálogo de produtos com filtros avançados</li>
+                        <li>Carrinho de compras persistente</li>
+                        <li>Sistema de pagamentos (Stripe/PayPal)</li>
+                        <li>Painel administrativo completo</li>
+                        <li>Gestão de estoque em tempo real</li>
+                        <li>Sistema de avaliações e comentários</li>
+                        <li>Notificações por email</li>
+                        <li>Relatórios de vendas</li>
+                    </ul>
+                    
+                    <h3>Tecnologias</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">React 18</span>
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Express</span>
+                        <span class="tech-item">Redux Toolkit</span>
+                        <span class="tech-item">Stripe API</span>
+                        <span class="tech-item">JWT</span>
+                        <span class="tech-item">Multer</span>
+                    </div>
+                    
+                    <h3>Links</h3>
+                    <div class="project-links-modal">
+                        <a href="https://ecommerce-marcos.vercel.app" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                        </a>
+                        <a href="https://github.com/marcosferreira/ecommerce" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="taskapp-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>App de Tarefas</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="project-demo">
+                    <div class="demo-container">
+                        <div class="demo-header">
+                            <h4>Task App Demo</h4>
+                            <div class="demo-controls">
+                                <button class="demo-btn active" data-tab="tasks">Tarefas</button>
+                                <button class="demo-btn" data-tab="add-task">Nova Tarefa</button>
+                                <button class="demo-btn" data-tab="stats">Estatísticas</button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-tab active" id="tasks-tab">
+                                <div class="task-list">
+                                    <div class="task-item completed">
+                                        <input type="checkbox" checked>
+                                        <span>Estudar React</span>
+                                        <span class="task-date">Hoje</span>
+                                    </div>
+                                    <div class="task-item">
+                                        <input type="checkbox">
+                                        <span>Fazer exercícios</span>
+                                        <span class="task-date">Amanhã</span>
+                                    </div>
+                                    <div class="task-item">
+                                        <input type="checkbox">
+                                        <span>Reunião com cliente</span>
+                                        <span class="task-date">23/12</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="add-task-tab">
+                                <div class="add-task-form">
+                                    <input type="text" placeholder="Nova tarefa..." class="demo-input">
+                                    <select class="demo-input">
+                                        <option>Hoje</option>
+                                        <option>Amanhã</option>
+                                        <option>Esta semana</option>
+                                    </select>
+                                    <button class="btn btn-primary">Adicionar Tarefa</button>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="stats-tab">
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <h5>Total</h5>
+                                        <span class="stat-number">3</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <h5>Concluídas</h5>
+                                        <span class="stat-number">1</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <h5>Pendentes</h5>
+                                        <span class="stat-number">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Descrição</h3>
+                    <p>Aplicativo mobile completo para gerenciamento de tarefas com sincronização em tempo real. Interface intuitiva e funcionalidades avançadas de produtividade.</p>
+                    
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li>Criação e edição de tarefas</li>
+                        <li>Categorização e tags</li>
+                        <li>Lembretes e notificações push</li>
+                        <li>Sincronização em tempo real</li>
+                        <li>Modo offline</li>
+                        <li>Estatísticas de produtividade</li>
+                        <li>Compartilhamento de listas</li>
+                        <li>Backup automático</li>
+                    </ul>
+                    
+                    <h3>Tecnologias</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">React Native</span>
+                        <span class="tech-item">Firebase</span>
+                        <span class="tech-item">Redux</span>
+                        <span class="tech-item">AsyncStorage</span>
+                        <span class="tech-item">Push Notifications</span>
+                        <span class="tech-item">React Navigation</span>
+                    </div>
+                    
+                    <h3>Links</h3>
+                    <div class="project-links-modal">
+                        <a href="https://expo.dev/@marcosferreira/taskapp" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-mobile-alt"></i> Ver Demo
+                        </a>
+                        <a href="https://github.com/marcosferreira/taskapp" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="dashboard-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Dashboard Analytics</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="project-demo">
+                    <div class="demo-container">
+                        <div class="demo-header">
+                            <h4>Dashboard Demo</h4>
+                            <div class="demo-controls">
+                                <button class="demo-btn active" data-tab="charts">Gráficos</button>
+                                <button class="demo-btn" data-tab="metrics">Métricas</button>
+                                <button class="demo-btn" data-tab="reports">Relatórios</button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-tab active" id="charts-tab">
+                                <div class="chart-container">
+                                    <div class="chart-bar">
+                                        <div class="bar" style="height: 60%">
+                                            <span>Jan</span>
+                                        </div>
+                                        <div class="bar" style="height: 80%">
+                                            <span>Fev</span>
+                                        </div>
+                                        <div class="bar" style="height: 45%">
+                                            <span>Mar</span>
+                                        </div>
+                                        <div class="bar" style="height: 90%">
+                                            <span>Abr</span>
+                                        </div>
+                                        <div class="bar" style="height: 75%">
+                                            <span>Mai</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="metrics-tab">
+                                <div class="metrics-grid">
+                                    <div class="metric-card">
+                                        <h5>Vendas</h5>
+                                        <span class="metric-value">R$ 45.230</span>
+                                        <span class="metric-change positive">+12%</span>
+                                    </div>
+                                    <div class="metric-card">
+                                        <h5>Usuários</h5>
+                                        <span class="metric-value">1.234</span>
+                                        <span class="metric-change positive">+8%</span>
+                                    </div>
+                                    <div class="metric-card">
+                                        <h5>Conversão</h5>
+                                        <span class="metric-value">3.2%</span>
+                                        <span class="metric-change negative">-2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-tab" id="reports-tab">
+                                <div class="report-list">
+                                    <div class="report-item">
+                                        <h5>Relatório Mensal</h5>
+                                        <p>Análise completa de vendas e métricas</p>
+                                        <button class="btn btn-secondary">Download PDF</button>
+                                    </div>
+                                    <div class="report-item">
+                                        <h5>Relatório Trimestral</h5>
+                                        <p>Performance dos últimos 3 meses</p>
+                                        <button class="btn btn-secondary">Download Excel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Descrição</h3>
+                    <p>Dashboard interativo com gráficos avançados e análise de dados em tempo real. Interface moderna e responsiva para visualização de métricas empresariais.</p>
+                    
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li>Gráficos interativos e responsivos</li>
+                        <li>Filtros de data e categoria</li>
+                        <li>Exportação de relatórios (PDF/Excel)</li>
+                        <li>Alertas e notificações</li>
+                        <li>Múltiplas visualizações de dados</li>
+                        <li>Painel personalizável</li>
+                        <li>Integração com APIs externas</li>
+                        <li>Modo escuro/claro</li>
+                    </ul>
+                    
+                    <h3>Tecnologias</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Vue.js 3</span>
+                        <span class="tech-item">D3.js</span>
+                        <span class="tech-item">Express</span>
+                        <span class="tech-item">Chart.js</span>
+                        <span class="tech-item">Socket.io</span>
+                        <span class="tech-item">JWT</span>
+                    </div>
+                    
+                    <h3>Links</h3>
+                    <div class="project-links-modal">
+                        <a href="https://dashboard-marcos.vercel.app" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                        </a>
+                        <a href="https://github.com/marcosferreira/dashboard" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marcos Ferreira Gomes",
+        "jobTitle": "Desenvolvedor Web",
+        "description": "Desenvolvedor apaixonado por tecnologia e inovação, especialista em React, Node.js e desenvolvimento web moderno.",
+        "url": "https://marcosferreira.dev",
+        "email": "marcossfg74@gmail.com",
+        "telephone": "+5562992029890",
+        "sameAs": [
+            "https://github.com/marcosferreira",
+            "https://linkedin.com/in/marcosferreira",
+            "https://instagram.com/marcosferreira"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Goiânia",
+            "addressRegion": "GO",
+            "addressCountry": "BR"
+        },
+        "knowsAbout": [
+            "React", "Node.js", "JavaScript", "HTML5", "CSS3", "Git"
+        ]
+    }
+    </script>
+</body>
+</html> 
